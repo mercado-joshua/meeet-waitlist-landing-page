@@ -1,4 +1,4 @@
-# Title: Meet Waitlist landing page
+# Title: Meeet Waitlist landing page
 * Click <a href="/dist/index.html" target="_blank">here</a> to view the project.
 * Checkout src folder for source code.
 <br>
