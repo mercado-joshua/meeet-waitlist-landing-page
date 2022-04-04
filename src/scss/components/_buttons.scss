@@ -1,0 +1,20 @@
+.cta-btn {
+    background: #32f5c8;
+    color: #013243;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: .3rem;
+    transition:
+      background 250ms ease-in-out,
+      transform 150ms ease;
+
+    &:hover,
+    &:focus {
+        background: #fff;
+        color: #000;
+    }
+
+    &:active {
+        transform: scale( .99 );
+    }
+}

@@ -1,0 +1,35 @@
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    > .title {
+        color: #32f5c8;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        text-shadow: 0 1px 3px black;
+
+        @media only screen and (min-width: 600px) {
+            font-size: 3.5rem;
+        }
+
+        @media only screen and (min-width: 768px) {
+            font-size: 4.5rem;
+        }
+
+        @media only screen and (min-width: 968px) {
+            font-size: 5.2rem;
+        }
+    }
+
+    > .cta-btn {
+        align-self: start;
+    }
+
+    @media only screen and (min-width: 768px) {
+        > .description {
+            width: 50%;
+        }
+    }
+}

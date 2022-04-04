@@ -1,0 +1,188 @@
+*:where(::before, ::after) {
+    box-sizing: border-box;
+}
+
+ul, ol, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+:where(ul, ol) > li {
+    list-style: none;
+}
+
+::selection {
+    background: #32f5c8;
+    color: #013243;
+    text-shadow: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    background: #013243;
+    color: #fff;
+    letter-spacing: .02rem;
+
+    > .bubble {
+        position: absolute;
+    }
+
+    // hides some avatars
+    > .bubble:nth-child( even ) {
+        display: none;
+    }
+    
+    // set random position and width in each avatar
+    > .bubble:nth-child( 1) {
+        top: 4rem;
+        left: 3rem;
+        width: 3rem;
+    }
+
+    > .bubble:nth-child( 3 ) {
+        top: 5rem;
+        right: 2rem;
+        width: 4rem;
+    }
+
+    > .bubble:nth-child( 5 ) {
+        bottom: 4rem;
+        right: 2rem;
+        width: 5rem;
+    }
+
+    @media only screen and (min-width: 600px) {
+        // show all avatars
+        > .bubble:nth-child( even ) {
+            display: block;
+        }
+
+        > .bubble:nth-child( 1 ) {
+            top: 3.2rem;
+            left: 3rem;
+            width: 3.2rem;
+        }
+
+        > .bubble:nth-child( 2 ) {
+            top: 2rem;
+            right: 3rem;
+            width: 6rem;
+        }
+
+        > .bubble:nth-child( 3 ) {
+            top: 9rem;
+            right: 1.5rem;
+            width: 4rem;
+        }
+
+        > .bubble:nth-child( 4 ) {
+            bottom: 2rem;
+            right: 3rem;
+            width: 10rem;
+        }
+
+        > .bubble:nth-child( 5 ) {
+            top: 7rem;
+            right: 8rem;
+            width: 4.5rem;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        > .bubble:nth-child( 1 ) {
+            top: 3.2rem;
+            left: 1.5rem;
+            width: 3.2rem;
+        }
+
+        > .bubble:nth-child( 2 ) {
+            width: 7rem;
+        }
+
+        > .bubble:nth-child( 3 ) {
+            top: 10rem;
+            width: 5rem;
+        }
+
+        > .bubble:nth-child( 4 ) {
+            right: 5rem;
+            width: 12rem;
+        }
+
+        > .bubble:nth-child( 5 ) {
+            top: 8rem;
+            right: 9rem;
+            width: 5rem;
+        }
+    }
+
+    @media only screen and (min-width: 968px) {
+        > .bubble:nth-child( 1 ) {
+            top: 3.2rem;
+            left: 1.5rem;
+            width: 3.2rem;
+        }
+
+        > .bubble:nth-child( 2 ) {
+            width: 9rem;
+        }
+
+        > .bubble:nth-child( 3 ) {
+            top: 12rem;
+            width: 8rem;
+        }
+
+        > .bubble:nth-child( 4 ) {
+            right: 9rem;
+            width: 14rem;
+        }
+
+        > .bubble:nth-child( 5 ) {
+            top: 9rem;
+            right: 11rem;
+            width: 5.2rem;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        > .bubble:nth-child( 1 ) {
+            top: 3.5rem;
+            left: 3rem;
+            width: 5rem;
+        }
+    }
+}
+
+[class*="-btn"] {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    appearance: none;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    border-style: none;
+    height: auto;
+}
+
+.max-wrapper {
+    max-width: 992px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.description {
+    opacity: .7;
+    margin: 0;
+}
